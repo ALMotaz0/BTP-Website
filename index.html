@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab || www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>owl</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- BS Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+
+  <body class="home">
+    <!-- Header -->
+    <header>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent"> 
+
+        <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand fs-4" href="index.html"><img src="images/logo.png" style="width: 60px; height: auto;"></a>
+            <!-- toggle btn -->
+            <button 
+                class="navbar-toggler shadow-none border-0" 
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+            >
+            <span class="navbar-toggler-icon"></span> 
+            </button>
+            <!-- SideBar -->
+            <div
+                class="sidebar offcanvas offcanvas-start" tabindex="-1"
+                style="background-color: rgb(255, 255, 255, 0.15);"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+            >
+            <!-- SideBar Header -->
+            <div class="offcanvas-header text-white border-bottom"> 
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Owl</h5>
+                <button
+                    type="button"
+                    class="btn-close btn-close-white shadow-none"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                >
+                </button>
+                <!-- SideBar Body -->
+            </div>
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#About">About</a> 
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#Services">Courses</a> 
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#Contact">Games</a> 
+                        </li>
+                    </ul>
+                    <!-- login / sign up -->
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"></div>
+                        <button class="btn btn-outline-light px-4" id="form-open" style="transition: 0.3s;">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+    <!-- Home -->
+    <main>
+        <div class="box-text p-5 d-flex justify-content-center align-items-center">
+          <div class="content text-center text-light">
+            <h2 class="mb-4 fs-2">
+              Hello World!
+              <br>
+              Welcome To Owl Site.
+            </h2>
+            <p class="text-secondary m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ullam porro tempora explicabo! Laudantium fugit inventore illum in libero beatae nemo deserunt temporibus sequi sed id quo, expedita sunt? Aut!</p>
+          </div>
+        </div>
+      <div class="form_container">
+        <i class="bi bi-x-lg form_close"></i>
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="#">
+            <h2>Login</h2>
+
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Enter your password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember me</label>
+              </span>
+              <a href="#" class="forgot_pw">Forgot password?</a>
+            </div>
+
+            <button class="button">Login Now</button>
+
+            <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+          </form>
+        </div>
+
+        <!-- Signup From -->
+        <div class="form signup_form">
+          <form action="#">
+            <h2>Signup</h2>
+
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Create password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Confirm password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <button class="button">Signup Now</button>
+
+            <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+          </form>
+        </div>
+        
+      </div>
+    </main>
+    <!-- About Section  -->
+    <section class="py-5" id="About" style="background: url(/images/bg-sec1.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"> 
+      <div class="container">
+      </div>
+      <div class="container">
+        <div class="card" style="border: none;">
+            <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="navigation-item">
+        <a href="#">About us</a>
+        <a href="#">Goals</a>
+        <a href="#">Benefits</a>
+        <a href="#">Other</a>
+      </div>
+      <div class="media-icons">
+        <a href="#"><i class="bi bi-github"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+      <div class="carousel-item active c-item">
+        <img src="/images/main-slide.jpg" class="d-block w-100 c-img" alt="Slide 1">
+      </div>
+      <div class="carousel-item c-item">
+        <img src="/images/2.jpg" class="d-block w-100 c-img" alt="Slide 2">
+        </div>
+      <div class="carousel-item c-item">
+        <img src="/images/3.jpg" class="d-block w-100 c-img" alt="Slide 3">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+          </div>
+              </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
